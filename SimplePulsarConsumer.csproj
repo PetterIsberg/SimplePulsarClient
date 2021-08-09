@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+      <ProjectGuid>{4D13FFFA-DFE5-4AAC-9410-D4F57C4F9189}</ProjectGuid>
+      <OutputType>Exe</OutputType>
+      <TargetFramework>net472</TargetFramework>
+      <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+      <AssemblyTitle>SimplePulsarConsumer</AssemblyTitle>
+      <Product>SimplePulsarConsumer</Product>
+      <Copyright>Copyright ©  2021</Copyright>
+      <OutputPath>bin\$(Configuration)\</OutputPath>
+      <RootNamespace>SimplePulsarConsumer</RootNamespace>
+      <AssemblyName>SimplePulsarConsumer</AssemblyName>
+      <LangVersion>9.0</LangVersion>
+   </PropertyGroup>
+   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+      <DebugType>full</DebugType>
+   </PropertyGroup>
+   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+      <DebugType>pdbonly</DebugType>
+   </PropertyGroup>
+   <ItemGroup>
+      <PackageReference Include="DotPulsar" Version="1.1.2" />
+   </ItemGroup>
+   <ItemGroup>
+      <Reference Include="System.ComponentModel.Composition" />
+      <Reference Include="System.Data.DataSetExtensions" />
+      <Reference Include="Microsoft.CSharp" />
+      <Reference Include="System.Net.Http" />
+   </ItemGroup>
+</Project>
